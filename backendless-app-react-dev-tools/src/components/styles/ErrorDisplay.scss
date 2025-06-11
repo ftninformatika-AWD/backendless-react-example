@@ -1,0 +1,21 @@
+.error-display-container {
+    background-color: #ffebee;
+    border: 1px solid #ef5350; 
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(239, 83, 80, 0.1);
+}
+
+.error-message {
+    color: #ef5350; 
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.error-tip {
+    color: #777;
+    font-size: 0.9rem;
+}

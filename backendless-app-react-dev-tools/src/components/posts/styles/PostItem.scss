@@ -1,0 +1,121 @@
+.post-item-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px; 
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.post-title {
+    font-size: 1.25rem;
+    color: #6c63ff;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.post-body {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.view-comments-btn {
+    background-color: #f0f0f0; 
+    color: #6c63ff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-self: flex-end; 
+    margin-top: auto; 
+
+    &:hover {
+        background-color: #e0e0e0;
+        color: #5751d9;
+    }
+
+    &:active {
+        background-color: #d0d0d0;
+    }
+}
+
+.comments-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.comment-item {
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.comment-author {
+    font-size: 0.9rem;
+    color: #6c63ff;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+
+    strong {
+        font-size: 1rem;
+        color: #333;
+    }
+}
+
+.comment-body {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.loading-comments-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.loading-spinner-small {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #6c63ff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 0.5rem;
+}
+
+.no-comments-message {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    padding: 1rem;
+}
